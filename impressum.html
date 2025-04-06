@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap"
       rel="stylesheet"
     />
     <title>3D-Equip</title>
   </head>
-  <body class="font-epilogue lg:min-h-[100vh]">
+  <body class="font-epilogue lg:min-h-[100vh] relative">
     <div
-      class="bg-black text-white flex px-2 justify-center text-center py-3 items-center gap-x-2 sm:gap-x-10 w-full"
+      class="bg-black text-white flex px-2 justify-center text-center py-3 items-center gap-x-2 sm:gap-x-10 w-full hidden"
     >
       <a href="mailto:support3d-equip.com">
         <span class="text-[11px] 375:text-[13px] 425:text-[14px] sm:text-[16px]"
@@ -33,18 +40,78 @@
         <div
           class="px-5 sm:px-10 lg:px-16 flex items-center justify-between h-[45px] xl:px-20 2xl:px-40 lg:max-w-[1600px] lg:mx-auto"
         >
-          <h1
-            class="font-Questrial font-[600] tracking-wide text-[1.3rem] 425:text-[1.6rem] sm:text-[1.7rem] md:text-[2rem]"
+          <div
+            class="flex items-center gap-x-5 500:gap-x-7 sm:gap-x-10 lg:gap-x-14 xl:gap-x-16"
           >
-            3D-Equip
-          </h1>
-          <a href="index.html">
-            <button
-              class="border-2 border-black bg-black text-white w-fit px-5 py-2 rounded-xl hover:bg-white hover:border-black hover:text-black transition-all sm:text-lg"
+            <h1
+              class="font-Questrial font-[600] tracking-wide text-[1.3rem] 425:text-[1.6rem] sm:text-[1.7rem] md:text-[2rem]"
             >
-              Home
+              3D-Equip
+            </h1>
+            <a href="index.html">
+              <button
+                class="border-2 border-black bg-black text-white w-fit px-3 py-2 rounded-xl text-[13px] hover:bg-white hover:border-black hover:text-black transition-all 500:text-[15px] sm:text-[16px]"
+              >
+                Home
+              </button>
+            </a>
+          </div>
+          <!-- <img class="" id="menu" src="images/icon-menu.svg" alt="" /> -->
+          <div class="relative" id="contactDiv">
+            <button
+              class="flex items-center gap-x-1 border-2 px-2 py-2 rounded-xl border-black text-[14px] 500:text-[15px] sm:text-[16px] hover:bg-black hover:text-white transition-all group"
+              id="contactBtn"
+            >
+              Contact
+              <svg
+                id="rotateArrow"
+                class="mt-[-1px]"
+                width="10"
+                height="6"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke="#000"
+                  class="group-hover:stroke-[#fff]"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
             </button>
-          </a>
+            <div
+              id="hiddenContent"
+              class="absolute translate-y-[-200%] transition-all top-[55px] left-[-30px] 500:left-[-45px] sm:left-[-41px] w-[120px] 500:w-[130px] sm:w-[140px] bg-[rgba(0_0_0/.8)] rounded-md px-5 py-5 text-white"
+            >
+              <ul class="flex flex-col gap-y-2">
+                <a href="mailto:mkvcinemas945@gmail.com">
+                  <li class="text-[13px] 500:text-[15px] sm:text-[16px]">
+                    Email <i class="fa-solid fa-arrow-right ml-[1px]"></i></li
+                ></a>
+                <a href="">
+                  <li class="text-[13px] 500:text-[15px] sm:text-[16px]">
+                    WhatsApp
+                    <i class="fa-solid fa-arrow-right ml-[1px]"></i></li
+                ></a>
+                <a href="tel:+88018323719">
+                  <li class="text-[13px] 500:text-[15px] sm:text-[16px]">
+                    Phone <i class="fa-solid fa-arrow-right ml-[1px]"></i></li
+                ></a>
+              </ul>
+            </div>
+          </div>
+          <div class="fixed left-0 top-0 h-full w-full hidden bg-[#fff]">
+            <div
+              class="px-5 sm:px-10 lg:px-16 flex items-center justify-between py-3 xl:px-20"
+            >
+              <h1
+                class="font-Questrial font-[600] tracking-wide text-[1.3rem] 425:text-[1.6rem] sm:text-[1.7rem] md:text-[2rem]"
+              >
+                3D-Equip
+              </h1>
+              <img src="images/icon-close-menu.svg" alt="" />
+            </div>
+          </div>
         </div>
       </nav>
       <div
